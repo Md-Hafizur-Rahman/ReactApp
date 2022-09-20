@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import Welcome from './component/Welcome';
+import Helo from './component/helo';
+import Avatar from './component/Comment';
+import Toggle from './component/helo';
+import React,{Component} from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component{
+  render(){
+    return(
+      <div className='App'>
+        <Welcome name='hafizur' lastname='rahman'>
+          <p>welcom to the react js.</p>
+          <button>Action</button>
+        </Welcome>
+        <Helo name='hafizur' lastname='rahman'/>
+        <Helo name='hafizur' lastname='rahman'/>
+        <Avatar/>
+        <Toggle/>
+      </div>
+    );
+  }
 }
+
 
 export default App;
