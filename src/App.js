@@ -6,7 +6,8 @@ import Toggle from './component/helo';
 import LoginControl from './component/Logincontrol';
 import Greeting from './component/Greeting';
 import Blog from './component/practise';
-import Form from './component/form'
+import Form from './component/form';
+import Calculator from './component/calculator';
 
 import React,{Component} from 'react';
 
@@ -30,6 +31,7 @@ class App extends Component{
         <LoginControl/>
         <Blog posts={posts} />
         <Form/>
+        <Calculator/>
       </div>
     );
    

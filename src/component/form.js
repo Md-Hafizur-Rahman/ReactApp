@@ -2,7 +2,7 @@ import React from 'react';
 
 export default class Form extends React.Component {
     state = {
-        title: 'JavaScript',
+        title: 'hafizur rahman',
         text: 'JavaScript is awesome',
         library: 'React',
         isAwesome: true,
@@ -41,7 +41,6 @@ export default class Form extends React.Component {
         return (
             <div>
                 <form onSubmit={this.submitHandler}>
-                    <input type="text" value={null} />
                     <input
                         type="text"
                         placeholder="Enter title"
