@@ -6,6 +6,7 @@ import Toggle from './component/helo';
 import LoginControl from './component/Logincontrol';
 import Greeting from './component/Greeting';
 import Blog from './component/practise';
+import Form from './component/form'
 
 import React,{Component} from 'react';
 
@@ -28,6 +29,7 @@ class App extends Component{
         <Greeting isLoggedIn={false} />
         <LoginControl/>
         <Blog posts={posts} />
+        <Form/>
       </div>
     );
    
