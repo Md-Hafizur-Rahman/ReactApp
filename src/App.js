@@ -8,6 +8,8 @@ import Greeting from './component/Greeting';
 import Blog from './component/practise';
 import Form from './component/form';
 import Calculator from './component/calculator';
+import { WelcomeDialog } from './component/composition';
+import SignUpDialog from './component/composition';
 
 import React,{Component} from 'react';
 
@@ -32,6 +34,8 @@ class App extends Component{
         <Blog posts={posts} />
         <Form/>
         <Calculator/>
+        <WelcomeDialog/>
+        <SignUpDialog/>
       </div>
     );
    
