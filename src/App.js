@@ -10,6 +10,8 @@ import Form from './component/form';
 import Calculator from './component/calculator';
 import { WelcomeDialog } from './component/composition';
 import SignUpDialog from './component/composition';
+import ClickCounter from './component/clickhover';
+import HoverCounter from './component/hober';
 
 import React,{Component} from 'react';
 
@@ -36,6 +38,8 @@ class App extends Component{
         <Calculator/>
         <WelcomeDialog/>
         <SignUpDialog/>
+        <ClickCounter/>
+        <HoverCounter/>
       </div>
     );
    
