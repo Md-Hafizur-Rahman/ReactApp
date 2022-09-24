@@ -13,15 +13,11 @@ import SignUpDialog from './component/composition';
 import ClickCounter from './component/clickhover';
 import HoverCounter from './component/hober';
 /* import MouseTracker from './component/MouseTrac';
- */import User from './component/Usern';
+ */
 import React,{Component} from 'react';
-
-export const Context=React.createContext();
+import Todo from './component/Todo';
 
 class App extends Component{
-  state = {
-    UserName:'hafizur'
-  };
   render(){
     
     const numbers = [1, 2, 3, 4, 5];
@@ -49,9 +45,7 @@ class App extends Component{
         <HoverCounter/>
 {/*         <MouseTracker/>
  */}
-  <Context.Provider value={this.state.UserName} />
-        <User/>
-        <Context.Provider/>
+        <Todo/>
       </div>
     );
    
