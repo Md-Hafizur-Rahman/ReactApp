@@ -12,15 +12,21 @@ import { WelcomeDialog } from './component/composition';
 import SignUpDialog from './component/composition';
 import ClickCounter from './component/clickhover';
 import HoverCounter from './component/hober';
-import MouseTracker from './component/MouseTrac';
-
+/* import MouseTracker from './component/MouseTrac';
+ */import User from './component/Usern';
 import React,{Component} from 'react';
 
+export const Context=React.createContext();
+
 class App extends Component{
+  state = {
+    UserName:'hafizur'
+  };
   render(){
+    
     const numbers = [1, 2, 3, 4, 5];
     const posts = [
-      {id: 1, title: 'Title number 1', content: 'the content of the title 1'},
+      {id: 1, title: 'Title number 1', content: 'the content of the title 1'}, 
       {id: 2, title: 'title number 2', content: 'the content of the title 2'}
     ];
     return(
@@ -41,7 +47,11 @@ class App extends Component{
         <SignUpDialog/>
         <ClickCounter/>
         <HoverCounter/>
-        <MouseTracker/>
+{/*         <MouseTracker/>
+ */}
+  <Context.Provider value={this.state.UserName} />
+        <User/>
+        <Context.Provider/>
       </div>
     );
    
