@@ -16,6 +16,7 @@ import HoverCounter from './component/hober';
  */
 import React,{Component} from 'react';
 import Todo from './component/Todo';
+import Example from './component/useeffect';
 
 class App extends Component{
   render(){
@@ -46,6 +47,7 @@ class App extends Component{
 {/*         <MouseTracker/>
  */}
         <Todo/>
+        <Example/>
       </div>
     );
    
